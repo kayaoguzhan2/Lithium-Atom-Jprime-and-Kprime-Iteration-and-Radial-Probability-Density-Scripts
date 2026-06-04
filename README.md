@@ -4,7 +4,7 @@ This repository features a Python script designed to calculate the dynamical ele
 
 This computational approach executes a double numerical integration across the entire spatial domain (from zero to infinity, `np.inf`), dynamically adjusting its mathematical step size. Consequently, it achieves high precision and accurately models complex quantum mechanical behaviors. These include effectively capturing the diffuse exponential tails of higher virtual states (such as the $6s$ orbital) alongside the highly concentrated probability density peak of the $1s$ core electron.
 
-## Mathematical Variables Explained
+## Mathematical Variables
 
 * **$r, r_1, r_2$**: Radial distances of the interacting electrons from the nucleus.
 * **$n$**: Principal quantum number ($3, 4, 5, 6$) that determines the energy level and spatial spread of the virtual orbital.
