@@ -20,7 +20,7 @@ This computational approach executes a double numerical integration across the e
 * **$\Delta E$** (Energy Denominator): The zeroth-order energy difference between the ground and excited configurations.
 * **$E^{(2)}$**: The final second-order energy contribution, computed via the Rayleigh-Schrödinger formula.
   
-## Wavefunction Visualization and Perturbation Analysis
+## Radial Probability Densities Script
 
 This part of the script shows the radial probability density of the Lithium atom's ground and perturbed states. It visually explains how electron correlation and screening effects change the spatial distribution of the wavefunctions.
 
@@ -41,4 +41,10 @@ The script creates a spatial grid starting from the nucleus up to $8$ Bohr radii
   $$P(r) = r^2 |R_{ns}(r)|^2$$
 * **$c$** (`c_coeffs`): The first-order correction coefficients. They show how much each virtual $ns$ state mixes into the $2s$ state to lower the Coulomb repulsion.
 * **$Z_{eff}$**: The effective nuclear charge. The variational approach uses it to model how inner-shell electrons shield the electrostatic pull of the nucleus ($Z_{eff} = 2.68$ for the $1s$ orbital, $Z_{eff} = 1.87$ for the $2s$ orbital).
+
+* ### Code Command References
+
+* **`np.linspace(0, 8, 1000)`**: Generates 1000 evenly spaced spatial points from 0 to 8 Bohr radii ($a_0$), defining the discrete integration and plotting grid.
+* **`eval_genlaguerre(n - 1, 1, x)`**: Evaluates the Generalized Laguerre Polynomial of degree $n-1$ and alpha parameter 1, which forms the orthogonal polynomial basis of the hydrogenic radial wavefunction.
+* **`simpson(y, x)`**: Executes numerical integration via Simpson's composite rule over the spatial grid to compute the normalization integral $\int P(r) dr$, ensuring total probability strictly equals 1.
 
