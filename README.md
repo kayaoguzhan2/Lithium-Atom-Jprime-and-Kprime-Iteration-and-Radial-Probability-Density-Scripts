@@ -32,7 +32,7 @@ In the independent-particle baseline, we assume the electrons feel the full nucl
 
 ### Computational Approach
 
-The script creates a spatial grid starting from the nucleus up to $8$ Bohr radii. It calculates the analytical hydrogenic wavefunctions, creates a linear combination using the calculated first-order perturbation coefficients, and uses numerical integration to re-normalize the new state. Finally, it plots all probability curves together to show how the orbitals relax and contract.
+The script creates a spatial grid starting from the nucleus up to $8$ Bohr radii. It calculates the analytical hydrogenic wavefunctions, creates a linear combination using the calculated second-order perturbation coefficients, and uses numerical integration to re-normalize the new state. Finally, it plots all probability curves together to show how the orbitals relax and contract.
 
 ### Mathematical Variables and Functions
 
