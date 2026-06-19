@@ -39,7 +39,7 @@ The script creates a spatial grid starting from the nucleus up to $8$ Bohr radii
 * **$R_{ns}(n, Z, r)$**: The radial part of the hydrogenic wavefunction. It shows the probability amplitude of finding an electron at a radial distance $r$. Here, $n$ is the principal quantum number and $Z$ is the nuclear charge.
 * **$P(r)$**: The radial probability density. It describes the real probability of finding the electron inside a spherical shell of radius $r$ and thickness $dr$. The formula is:
   $$P(r) = r^2 |R_{ns}(r)|^2$$
-* **$c$** (`c_coeffs`): The first-order correction coefficients. They show how much each virtual $ns$ state mixes into the $2s$ state to lower the Coulomb repulsion.
+* **$c$** (`c_coeffs`): The second-order correction coefficients as seen in Table I in article. They show how much each virtual $ns$ state mixes into the $2s$ state to lower the Coulomb repulsion.
 * **$Z_{eff}$**: The effective nuclear charge. The variational approach uses it to model how inner-shell electrons shield the electrostatic pull of the nucleus ($Z_{eff} = 2.68$ for the $1s$ orbital, $Z_{eff} = 1.87$ for the $2s$ orbital).
 
 * ### Code Command References
